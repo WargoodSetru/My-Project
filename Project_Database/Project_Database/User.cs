@@ -15,5 +15,6 @@ namespace Project_Database
         public int Id { get; set; }//   Идентификатор
         public string? Name { get; set; }// Имя
         public int Age { get; set; }//  Возраст
+
     }
 }
