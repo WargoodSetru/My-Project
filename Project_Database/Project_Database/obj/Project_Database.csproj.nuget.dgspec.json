@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mazurima\\source\\repos\\Project_Database\\Project_Database\\Project_Database.csproj": {}
+    "C:\\Users\\mazurima\\source\\repos\\Repositor\\Project_Database\\Project_Database\\Project_Database.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mazurima\\source\\repos\\Project_Database\\Project_Database\\Project_Database.csproj": {
+    "C:\\Users\\mazurima\\source\\repos\\Repositor\\Project_Database\\Project_Database\\Project_Database.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mazurima\\source\\repos\\Project_Database\\Project_Database\\Project_Database.csproj",
+        "projectUniqueName": "C:\\Users\\mazurima\\source\\repos\\Repositor\\Project_Database\\Project_Database\\Project_Database.csproj",
         "projectName": "Project_Database",
-        "projectPath": "C:\\Users\\mazurima\\source\\repos\\Project_Database\\Project_Database\\Project_Database.csproj",
+        "projectPath": "C:\\Users\\mazurima\\source\\repos\\Repositor\\Project_Database\\Project_Database\\Project_Database.csproj",
         "packagesPath": "C:\\Users\\mazurima\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mazurima\\source\\repos\\Project_Database\\Project_Database\\obj\\",
+        "outputPath": "C:\\Users\\mazurima\\source\\repos\\Repositor\\Project_Database\\Project_Database\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
