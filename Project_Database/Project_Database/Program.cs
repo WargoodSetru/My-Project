@@ -15,18 +15,23 @@ using (ApplicationContext database = new ApplicationContext())
     // создаем два объекта User
 
 
+
+
+
+    string RandomId = Guid.NewGuid().ToString("N");
+
+    
+
+
+
+
     Console.WriteLine("Введите свое имя");
     string name = Console.ReadLine();
     Console.WriteLine("Введите свой возраст");
     int age = Int32.Parse(Console.ReadLine());
-    User ObjectUser = new User { Name = name, Age = age };
+    User ObjectUser = new User { Name = name, Age = age, Id = RandomId };
 
   
-
-
-
-
-
 
 
 
@@ -44,7 +49,7 @@ using (ApplicationContext database = new ApplicationContext())
         Console.WriteLine($"{@object.Id}.{@object.Name} - {@object.Age}");
     }
 
-  
 
+    
 }
 

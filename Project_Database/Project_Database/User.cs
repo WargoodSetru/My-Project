@@ -12,7 +12,7 @@ namespace Project_Database
     /// </summary>
     public class User
     {
-        public int Id { get; set; }//   Идентификатор
+        public string? Id { get; set; }//   Идентификатор
         public string? Name { get; set; }// Имя
         public int Age { get; set; }//  Возраст
 
