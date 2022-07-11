@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loger", "Loger\Loger.csproj", "{6A3BCE05-F7B4-42A5-83A2-287850F4F961}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A3BCE05-F7B4-42A5-83A2-287850F4F961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3BCE05-F7B4-42A5-83A2-287850F4F961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3BCE05-F7B4-42A5-83A2-287850F4F961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3BCE05-F7B4-42A5-83A2-287850F4F961}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D67FD5AA-34CF-49F7-830D-67D98B918B3A}
+	EndGlobalSection
+EndGlobal

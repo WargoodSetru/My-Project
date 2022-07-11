@@ -1,0 +1,15 @@
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\bin\Debug\net6.0\Project_Database.exe
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\bin\Debug\net6.0\Project_Database.deps.json
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\bin\Debug\net6.0\Project_Database.runtimeconfig.json
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\bin\Debug\net6.0\Project_Database.dll
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\bin\Debug\net6.0\Project_Database.pdb
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.csproj.AssemblyReference.cache
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.AssemblyInfoInputs.cache
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.AssemblyInfo.cs
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.csproj.CoreCompileInputs.cache
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.dll
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\refint\Project_Database.dll
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.pdb
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\Project_Database.genruntimeconfig.cache
+C:\Users\mazurima\source\repos\Project_Database\Project_Database\obj\Debug\net6.0\ref\Project_Database.dll

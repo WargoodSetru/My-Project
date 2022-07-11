@@ -1,0 +1,10 @@
+C:\Users\mazurima\source\repos\Loger\Loger\bin\Debug\Loger.exe.config
+C:\Users\mazurima\source\repos\Loger\Loger\bin\Debug\Loger.exe
+C:\Users\mazurima\source\repos\Loger\Loger\bin\Debug\Loger.pdb
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.csproj.AssemblyReference.cache
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.csproj.SuggestedBindingRedirects.cache
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.Properties.Resources.resources
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.csproj.GenerateResource.cache
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.csproj.CoreCompileInputs.cache
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.exe
+C:\Users\mazurima\source\repos\Loger\Loger\obj\Debug\Loger.pdb

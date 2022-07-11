@@ -1,0 +1,8 @@
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\bin\Debug\ASCII art Lesson.exe.config
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\bin\Debug\ASCII art Lesson.exe
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\bin\Debug\ASCII art Lesson.pdb
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\obj\Debug\ASCII art Lesson.csproj.AssemblyReference.cache
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\obj\Debug\ASCII art Lesson.csproj.SuggestedBindingRedirects.cache
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\obj\Debug\ASCII art Lesson.csproj.CoreCompileInputs.cache
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\obj\Debug\ASCII art Lesson.exe
+C:\Users\mazurima\source\repos\ASCII art Lesson\ASCII art Lesson\obj\Debug\ASCII art Lesson.pdb
