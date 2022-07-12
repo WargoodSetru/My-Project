@@ -12,9 +12,18 @@ namespace Project_Database
     /// </summary>
     public class User
     {
-        public string? Id { get; set; }//   Идентификатор
-        public string? Name { get; set; }// Имя
-        public int Age { get; set; }//  Возраст
+        /// <summary>
+        /// Идентификатор
+        /// </summary>
+        public string? Id { get; set; }
+        /// <summary>
+        /// Имя
+        /// </summary>
+        public string? Name { get; set; }
+        /// <summary>
+        /// Возраст
+        /// </summary>
+        public int Age { get; set; }
 
     }
 }

@@ -9,12 +9,18 @@ namespace Project_Database
 {
     public class DeleteObjectDatebase
     {
-
-        public void DeleteBook(List<User> b, int id) // Удаление книги из списка
+        /// <summary>
+        /// Удаление элемента из базы данных
+        /// </summary>
+        /// <param name="b"></param>
+        /// <param name="id"></param>
+        public void Delete_ObjectDatebase(List<User> b, int id)
         {
             //Console.ReadLine();
             //var itemToDelete = b.Where(x => x.Id == id).Select(x => x).First();
             //b.Remove(itemToDelete);
+
+
         }
 
     }
