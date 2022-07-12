@@ -12,25 +12,147 @@ using Project_Database;
 
 using (ApplicationContext ConnectDatabase = new ApplicationContext())
 {
-    // Создание пользователей
-    string RandomId = Guid.NewGuid().ToString("N");
-    Console.WriteLine("Введите свое имя");
-    string name = Console.ReadLine();
-    Console.WriteLine("Введите свой возраст");
-    int age = Int32.Parse(Console.ReadLine());
-    User ObjectUser = new User { Name = name, Age = age, Id = RandomId };
+    
 
-    // добавляем их в бд
-    ConnectDatabase.Users.Add(ObjectUser);
-    ConnectDatabase.SaveChanges();
-    Console.WriteLine("Объекты успешно сохранены");
-
-    // получаем объекты из бд и выводим на консоль
-    var users = ConnectDatabase.Users.ToList();
-    Console.WriteLine("Список объектов:");
-    foreach (User @object in users)
+    while (true)
     {
-        Console.WriteLine($" ID({@object.Id.Substring(0, 4)}). {@object.Name} - {@object.Age}");
+        
+        Console.WriteLine("Меню приложения");
+        Console.WriteLine("Записаться - Нажмите цифру (1) ");
+        Console.WriteLine("Просмотреть список участников - Нажмите цифру (2) ");
+        Console.WriteLine("Выйти - Нажмите цифру (3) ");
+        string Menu = Console.ReadLine();
+
+        Console.Clear();
+
+        switch (Menu)
+        {
+
+            case "1":
+
+
+                // Создание пользователей
+                string RandomId = Guid.NewGuid().ToString("N");
+                Console.WriteLine("Введите свое имя");
+                string name = Console.ReadLine();
+                Console.WriteLine("Введите свой возраст");
+                int age = Int32.Parse(Console.ReadLine());
+                User ObjectUser = new User { Name = name, Age = age, Id = RandomId };
+                Console.Clear();
+                Console.WriteLine($"Проверьте введенные вами данные\n " + ObjectUser.ToString);
+
+                
+
+
+
+
+                Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу)");
+                string SendUserDatebase = Console.ReadLine();
+                Console.Clear();
+
+
+
+                if (SendUserDatebase == "1")
+                {
+                    // добавляем их в бд
+                    ConnectDatabase.Users.Add(ObjectUser);
+                    ConnectDatabase.SaveChanges();
+                    Console.WriteLine("Объекты успешно сохранены");
+                    Thread.Sleep(1000);
+
+                    Console.Clear();
+
+                }
+                else
+                {
+                    Console.Clear();
+                    continue;
+                }
+                break;
+
+
+
+
+
+
+
+            case "2":
+
+                //получаем объекты из бд и выводим на консоль
+                var Users = ConnectDatabase.Users.ToList();
+                Console.WriteLine("Список Участников:");
+                foreach (User @object in Users)
+                {
+                    Console.WriteLine($" ID({@object.Id.Substring(0, 4)}). {@object.Name} - {@object.Age}");
+                }
+                Console.WriteLine("Для продолжения нажмите ENTER");
+                Console.ReadLine();
+                Console.Clear();
+
+                break;
+
+            case "3":
+                Environment.Exit(0);
+                break;
+
+
+
+
+            default:
+                Console.WriteLine("Невернное введенное значение!");
+                continue;
+
+        }
+
+
     }
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//// Создание пользователей
+//string RandomId = Guid.NewGuid().ToString("N");
+//    Console.WriteLine("Введите свое имя");
+//    string name = Console.ReadLine();
+//    Console.WriteLine("Введите свой возраст");
+//    int age = Int32.Parse(Console.ReadLine());
+//    User ObjectUser = new User { Name = name, Age = age, Id = RandomId };
+
+//    // добавляем их в бд
+//    ConnectDatabase.Users.Add(ObjectUser);
+//    ConnectDatabase.SaveChanges();
+//    Console.WriteLine("Объекты успешно сохранены");
+
+//    // получаем объекты из бд и выводим на консоль
+//    var users = ConnectDatabase.Users.ToList();
+//    Console.WriteLine("Список объектов:");
+//    foreach (User @object in users)
+//    {
+//        Console.WriteLine($" ID({@object.Id.Substring(0, 4)}). {@object.Name} - {@object.Age}");
+//    }
+//}
 
