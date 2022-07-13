@@ -24,24 +24,28 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
         {
 
             case "1":
-                // Создание пользователей
-                string RandomId = Guid.NewGuid().ToString("N");
 
-                Console.WriteLine("Введите имя");
-                string name = Console.ReadLine();
+           Create_User user = new Create_User();
 
-                Console.WriteLine("Введите фамилию");
-                string surname = Console.ReadLine();
 
-                Console.WriteLine("Введите свой возраст");
-                int age = Int32.Parse(Console.ReadLine());
+                User u = user.CreateUser();
 
-                //Записываем введенные данные ObjectUser
-                User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
-                Console.Clear();
 
-                Console.WriteLine($"Проверьте введенные вами данные\n " + "Имя: " + name + "\nФамилия: " + surname + "\nВозраст: " + age);
-                Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу)");
+
+
+
+
+
+
+
+
+
+                //////Записываем введенные данные ObjectUser
+                //User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
+                //Console.Clear();
+
+                //Console.WriteLine($"Проверьте введенные вами данные\n " + "Имя: " + name + "\nФамилия: " + surname + "\nВозраст: " + age);
+                //Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу для отмены действия) Редактировать данные ?\n(3)");
 
                 //SendUserDatebase - Выбор пользователя на сохранение данных
                 string SendUserDatebase = Console.ReadLine();
@@ -49,12 +53,17 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
                 if (SendUserDatebase == "1")
                 {
                     // добавляем их в бд
-                    ConnectDatabase.DatabaseProject_Database.Add(ObjectUser);// Добавляем элементы в базу данных
+                    ConnectDatabase.DatabaseProject_Database.Add(u);// Добавляем элементы в базу данных
                     ConnectDatabase.SaveChanges();// Сохраняем изменения в базе данных
                     Console.WriteLine("Объекты успешно сохранены");
                     Thread.Sleep(1000);
                     Console.Clear();
                 }
+
+                //if (SendUserDatebase == "3")
+                //{
+
+                //}
                 else
                 {
                     Console.Clear();
