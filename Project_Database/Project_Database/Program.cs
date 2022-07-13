@@ -7,16 +7,11 @@ using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Project_Database;
-
-
-
 using (ApplicationContext ConnectDatabase = new ApplicationContext())
 {
-    
-
     while (true)
     {
-        
+
         Console.WriteLine("Меню приложения");
         Console.WriteLine("Записаться - Нажмите цифру (1) ");
         Console.WriteLine("Просмотреть список участников - Нажмите цифру (2) ");
@@ -29,39 +24,36 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
         {
 
             case "1":
-
-
                 // Создание пользователей
                 string RandomId = Guid.NewGuid().ToString("N");
-                Console.WriteLine("Введите свое имя");
+
+                Console.WriteLine("Введите имя");
                 string name = Console.ReadLine();
+
+                Console.WriteLine("Введите фамилию");
+                string surname = Console.ReadLine();
+
                 Console.WriteLine("Введите свой возраст");
                 int age = Int32.Parse(Console.ReadLine());
-                User ObjectUser = new User { Name = name, Age = age, Id = RandomId };
+
+                //Записываем введенные данные ObjectUser
+                User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
                 Console.Clear();
-                Console.WriteLine($"Проверьте введенные вами данные\n " + ObjectUser.ToString);
 
-                
-
-
-
-
+                Console.WriteLine($"Проверьте введенные вами данные\n " + "Имя: " + name + "\nФамилия: " + surname + "\nВозраст: " + age);
                 Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу)");
+
+                //SendUserDatebase - Выбор пользователя на сохранение данных
                 string SendUserDatebase = Console.ReadLine();
                 Console.Clear();
-
-
-
                 if (SendUserDatebase == "1")
                 {
                     // добавляем их в бд
-                    ConnectDatabase.Users.Add(ObjectUser);
-                    ConnectDatabase.SaveChanges();
+                    ConnectDatabase.DatabaseProject_Database.Add(ObjectUser);// Добавляем элементы в базу данных
+                    ConnectDatabase.SaveChanges();// Сохраняем изменения в базе данных
                     Console.WriteLine("Объекты успешно сохранены");
                     Thread.Sleep(1000);
-
                     Console.Clear();
-
                 }
                 else
                 {
@@ -70,46 +62,37 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
                 }
                 break;
 
-
-
-
-
-
-
             case "2":
-
                 //получаем объекты из бд и выводим на консоль
-                var Users = ConnectDatabase.Users.ToList();
+                var Users = ConnectDatabase.DatabaseProject_Database.ToList();
                 Console.WriteLine("Список Участников:");
-                foreach (User @object in Users)
+
+
+                if (Users.Count > 0)//  Count > 0твечает за кол-во элементов в массиве
                 {
-                    Console.WriteLine($" ID({@object.Id.Substring(0, 4)}). {@object.Name} - {@object.Age}");
+                    foreach (User @object in Users)
+                    {
+                        Console.WriteLine($" ID({@object.Id.Substring(0, 4)}). {@object.Name} {@object.SurName} - {@object.Age}");
+                    }
                 }
+                else
+                {
+                    Console.WriteLine(" Список пуст");
+                }
+
                 Console.WriteLine("Для продолжения нажмите ENTER");
                 Console.ReadLine();
                 Console.Clear();
-
                 break;
 
             case "3":
                 Environment.Exit(0);
                 break;
-
-
-
-
             default:
                 Console.WriteLine("Невернное введенное значение!");
                 continue;
-
         }
-
-
     }
-
-
-
-
 }
 
 

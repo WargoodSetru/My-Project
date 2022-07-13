@@ -16,6 +16,10 @@ namespace Project_Database
         /// Идентификатор
         /// </summary>
         public string? Id { get; set; }
+       /// <summary>
+       /// Фамилия
+       /// </summary>
+        public string? SurName { get; set; }
         /// <summary>
         /// Имя
         /// </summary>

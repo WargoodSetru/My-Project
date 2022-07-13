@@ -11,11 +11,23 @@ namespace Project_Database
     /// </summary>
     public class ApplicationContext : DbContext
     {
-        public DbSet<User> Users => Set<User>();
+        /// <summary>
+        /// Создание базы данных
+        /// Вводим название базы данных
+        /// Set<User> - подключаем класс пользователей
+        /// </summary>
+        public DbSet<User> DatabaseProject_Database => Set<User>();
+        /// <summary>
+        /// Подключение бд
+        /// </summary>
         public ApplicationContext() => Database.EnsureCreated();
+        /// <summary>
+        /// Сохраняем бд в папку Source с названиме Project_Database.db
+        /// </summary>
+        /// <param name="optionsBuilder"></param>
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=helloapp.db");
+            optionsBuilder.UseSqlite("Data Source=Project_Database.db");
         }
     }
 }
