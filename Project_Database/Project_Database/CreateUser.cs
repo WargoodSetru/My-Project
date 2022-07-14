@@ -8,9 +8,6 @@ namespace Project_Database
 {
     public class Create_User
     {
-
-        public string name;
-
         /// <summary>
         /// Создание пользователя 
         /// </summary>
@@ -26,13 +23,48 @@ namespace Project_Database
             Console.WriteLine("Введите фамилию");
             string surname = Console.ReadLine();
 
-            Console.WriteLine("Введите свой возраст");
-            int age = Int32.Parse(Console.ReadLine());
 
-            User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
-            return ObjectUser;//    Возвращаем значение с переменной
+            while (true)
+            {
+                Console.WriteLine("Введите свой возраст");
 
+                try
+                {
+
+                    int age = Int32.Parse(Console.ReadLine());
+
+                    User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
+                    return ObjectUser;//    Возвращаем значение с переменной
+                }
+                catch (Exception)
+                {
+                    Console.Clear();
+                    Console.WriteLine("Неправильно введён возраст");
+                    Console.WriteLine("Ввести заново (1)\nОтменить дейсвтия (Нажмите любую клавишу)");
+                    string ErorAge = Console.ReadLine();
+                    Console.Clear();
+
+                    if (ErorAge == "1")
+                    {
+
+                        continue; // Код ниже выполнятся не будет благодаря (continue) и мы вернемся в начало цикла while
+
+                    }
+
+                    else
+                    {
+     
+                        Console.WriteLine("Отмена действия");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        return null;
+                       
+                    }
+                }
+            }
         }
     }
 }
+    
+
 

@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Project_Database;
+
 using (ApplicationContext ConnectDatabase = new ApplicationContext())
+
 {
     while (true)
     {
-
         Console.WriteLine("Меню приложения");
         Console.WriteLine("Записаться - Нажмите цифру (1) ");
         Console.WriteLine("Просмотреть список участников - Нажмите цифру (2) ");
@@ -22,30 +23,20 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
 
         switch (Menu)
         {
-
             case "1":
+                Create_User user = new Create_User();
+                User ObjectUser = user.CreateUser();
+                
+                
+                
+                if (ObjectUser == null)
+                {
+                    continue;
+                }
 
-           Create_User user = new Create_User();
-
-
-                User u = user.CreateUser();
-
-
-
-
-
-
-
-
-
-
-
-                //////Записываем введенные данные ObjectUser
-                //User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
-                //Console.Clear();
 
                 //Console.WriteLine($"Проверьте введенные вами данные\n " + "Имя: " + name + "\nФамилия: " + surname + "\nВозраст: " + age);
-                //Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу для отмены действия) Редактировать данные ?\n(3)");
+                Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу для отмены действия) Редактировать данные ?\n(3)");
 
                 //SendUserDatebase - Выбор пользователя на сохранение данных
                 string SendUserDatebase = Console.ReadLine();
@@ -53,7 +44,7 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
                 if (SendUserDatebase == "1")
                 {
                     // добавляем их в бд
-                    ConnectDatabase.DatabaseProject_Database.Add(u);// Добавляем элементы в базу данных
+                    ConnectDatabase.DatabaseProject_Database.Add(ObjectUser);// Добавляем элементы в базу данных
                     ConnectDatabase.SaveChanges();// Сохраняем изменения в базе данных
                     Console.WriteLine("Объекты успешно сохранены");
                     Thread.Sleep(1000);

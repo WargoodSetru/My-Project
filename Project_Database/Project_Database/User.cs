@@ -7,7 +7,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Project_Database
 {
-
+    /// <summary>
+    /// Шаблон дял создания пользователя
+    /// </summary>
     public class User
     {
         /// <summary>
@@ -27,29 +29,6 @@ namespace Project_Database
         /// </summary>
         public int Age { get; set; }
     }
-
-    //public class adduser : User
-    //{
-    //    public adduser()
-    //    {
-
-    //        // Создание пользователей
-    //        string RandomId = Guid.NewGuid().ToString("N");
-
-    //        Console.WriteLine("Введите имя");
-    //        string name = Console.ReadLine();
-
-    //        Console.WriteLine("Введите фамилию");
-    //        string surname = Console.ReadLine();
-
-    //        Console.WriteLine("Введите свой возраст");
-    //        int age = Int32.Parse(Console.ReadLine());
-
-    //        User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
-
-    //    }
-    //}
-
 }
 
 
