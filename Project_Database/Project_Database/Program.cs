@@ -11,6 +11,9 @@ using Project_Database;
 using (Application_Context ConnectDatabase = new Application_Context())
 
 {
+
+
+
     while (true)
     {
         Console.WriteLine("Меню приложения");
@@ -31,7 +34,7 @@ using (Application_Context ConnectDatabase = new Application_Context())
                 {
                     continue;
                 }
-
+               
                 Console.WriteLine($"Проверьте введенные вами данные\n" + "Имя: " + ObjectUser.Name + "\nФамилия: " + ObjectUser.SurName + "\nВозраст: " + ObjectUser.Age);
                 Console.WriteLine("Отрпавить данные?\nДа    (1)\nНет   (Нажмите любую клавишу для отмены действия)\nРедактировать данные?    (3)");
 
@@ -68,7 +71,7 @@ using (Application_Context ConnectDatabase = new Application_Context())
                 {
                     foreach (User @object in Users)
                     {
-                        
+                        Console.WriteLine("");
                          Console.WriteLine($"ID({@object.Id.Substring(0, 4)})." + "Имя: " + @object.Name + "\nФамилия: " + @object.SurName + "\nВозраст: " + @object.Age);
                     }
                 }
