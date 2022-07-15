@@ -11,28 +11,25 @@ namespace Project_Database
         /// <summary>
         /// Создание пользователя 
         /// </summary>
+        
         public User CreateUser()
         {
 
             // Создание пользователей
             string RandomId = Guid.NewGuid().ToString("N");
 
-            Console.WriteLine("Введите имя");
+            Console.Write("Введите имя: ");
             string name = Console.ReadLine();
 
-            Console.WriteLine("Введите фамилию");
+            Console.Write("Введите фамилию: ");
             string surname = Console.ReadLine();
-
 
             while (true)
             {
-                Console.WriteLine("Введите свой возраст");
-
+                Console.Write("Введите свой возраст: ");
                 try
                 {
-
                     int age = Int32.Parse(Console.ReadLine());
-
                     User ObjectUser = new User { Name = name, SurName = surname, Age = age, Id = RandomId };
                     return ObjectUser;//    Возвращаем значение с переменной
                 }
@@ -52,13 +49,11 @@ namespace Project_Database
                     }
 
                     else
-                    {
-     
+                    {     
                         Console.WriteLine("Отмена действия");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        return null;
-                       
+                        return null;                       
                     }
                 }
             }

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Project_Database
 {
-    public class DeleteObjectDatebase
+    public class Delete_Object_Datebase
     {
         /// <summary>
         /// Удаление элемента из базы данных

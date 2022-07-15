@@ -8,7 +8,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Project_Database;
 
-using (ApplicationContext ConnectDatabase = new ApplicationContext())
+using (Application_Context ConnectDatabase = new Application_Context())
 
 {
     while (true)
@@ -26,17 +26,14 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
             case "1":
                 Create_User user = new Create_User();
                 User ObjectUser = user.CreateUser();
-                
-                
-                
+
                 if (ObjectUser == null)
                 {
                     continue;
                 }
 
-
-                //Console.WriteLine($"Проверьте введенные вами данные\n " + "Имя: " + name + "\nФамилия: " + surname + "\nВозраст: " + age);
-                Console.WriteLine("Отрпавить данные?\n Да (1)  Нет(Нажмите любую клавишу для отмены действия) Редактировать данные ?\n(3)");
+                Console.WriteLine($"Проверьте введенные вами данные\n" + "Имя: " + ObjectUser.Name + "\nФамилия: " + ObjectUser.SurName + "\nВозраст: " + ObjectUser.Age);
+                Console.WriteLine("Отрпавить данные?\nДа    (1)\nНет   (Нажмите любую клавишу для отмены действия)\nРедактировать данные?    (3)");
 
                 //SendUserDatebase - Выбор пользователя на сохранение данных
                 string SendUserDatebase = Console.ReadLine();
@@ -47,14 +44,13 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
                     ConnectDatabase.DatabaseProject_Database.Add(ObjectUser);// Добавляем элементы в базу данных
                     ConnectDatabase.SaveChanges();// Сохраняем изменения в базе данных
                     Console.WriteLine("Объекты успешно сохранены");
+                    Console.WriteLine($"Ваш ID (Запишите его) ({ObjectUser.Id.Substring(0, 4)})");
+                    Console.WriteLine("Нажмите любую клавишу для продолжения");
+                    Console.ReadLine();
                     Thread.Sleep(1000);
                     Console.Clear();
                 }
 
-                //if (SendUserDatebase == "3")
-                //{
-
-                //}
                 else
                 {
                     Console.Clear();
@@ -72,7 +68,8 @@ using (ApplicationContext ConnectDatabase = new ApplicationContext())
                 {
                     foreach (User @object in Users)
                     {
-                        Console.WriteLine($" ID({@object.Id.Substring(0, 4)}). {@object.Name} {@object.SurName} - {@object.Age}");
+                        
+                         Console.WriteLine($"ID({@object.Id.Substring(0, 4)})." + "Имя: " + @object.Name + "\nФамилия: " + @object.SurName + "\nВозраст: " + @object.Age);
                     }
                 }
                 else

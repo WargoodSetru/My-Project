@@ -9,7 +9,7 @@ namespace Project_Database
     /// <summary>
     /// Взаимодействие с базой данных
     /// </summary>
-    public class ApplicationContext : DbContext
+    public class Application_Context : DbContext
     {
         /// <summary>
         /// Создание базы данных
@@ -20,7 +20,7 @@ namespace Project_Database
         /// <summary>
         /// Подключение бд
         /// </summary>
-        public ApplicationContext() => Database.EnsureCreated();
+        public Application_Context() => Database.EnsureCreated();
         /// <summary>
         /// Сохраняем бд в папку Source с названиме Project_Database.db
         /// </summary>
