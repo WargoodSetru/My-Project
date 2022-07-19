@@ -14,6 +14,8 @@ namespace Project_Database
         
         public User CreateUser()
         {
+            Position_Txt PositionTxt = new Position_Txt();
+
 
             // Создание пользователей
             string RandomId = Guid.NewGuid().ToString("N");

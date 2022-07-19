@@ -6,13 +6,22 @@ using System.Threading.Tasks;
 using System.IO;
 
 namespace Project_Database
-{
+{   
+    /// <summary>
+    /// Установка позиции текста (left/top)
+    /// </summary>
     internal class Position_Txt
     {
         protected static int origRow;
         protected static int origCol;
 
-        protected static void WriteAt(string s, int x, int y)
+    /// <summary>
+    /// вывод текста по позициям
+    /// </summary>
+    /// <param name="s"> Текст </param>
+    /// <param name="x"> Расстояние от края </param>
+    /// <param name="y"> Расстояние от вверха</param>
+        public void WriteAt(string s, int x, int y)
         {
             try
             {
@@ -24,7 +33,8 @@ namespace Project_Database
                 Console.Clear();
                 Console.WriteLine(e.Message);
             }
+           
         }
-
+        
     }
 }

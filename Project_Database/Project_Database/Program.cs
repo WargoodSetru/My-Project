@@ -8,18 +8,30 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Project_Database;
 
+
+
+
 using (Application_Context ConnectDatabase = new Application_Context())
 
 {
 
+    Position_Txt PositionTxt = new Position_Txt();
 
+
+    
 
     while (true)
     {
-        Console.WriteLine("Меню приложения");
-        Console.WriteLine("Записаться - Нажмите цифру (1) ");
-        Console.WriteLine("Просмотреть список участников - Нажмите цифру (2) ");
-        Console.WriteLine("Выйти - Нажмите цифру (3) ");
+        var ListUser = ConnectDatabase.DatabaseProject_Database.ToList();
+        Console.WriteLine("Зарегистрировано пользователей: " + ListUser.Count);
+        PositionTxt.WriteAt("Меню приложения", 48, 0);
+        PositionTxt.WriteAt("Записаться - Нажмите цифру (1) ", 43, 2);
+        PositionTxt.WriteAt("Просмотреть список участников - Нажмите цифру (2) ", 33, 4);
+        PositionTxt.WriteAt("Выйти - Нажмите цифру (3) ", 43, 6);
+        PositionTxt.WriteAt("Ввод: ", 0, 10);
+
+
+
         string Menu = Console.ReadLine();
 
         Console.Clear();
@@ -34,8 +46,9 @@ using (Application_Context ConnectDatabase = new Application_Context())
                 {
                     continue;
                 }
-               
+                Console.Clear();
                 Console.WriteLine($"Проверьте введенные вами данные\n" + "Имя: " + ObjectUser.Name + "\nФамилия: " + ObjectUser.SurName + "\nВозраст: " + ObjectUser.Age);
+                Console.WriteLine("");
                 Console.WriteLine("Отрпавить данные?\nДа    (1)\nНет   (Нажмите любую клавишу для отмены действия)\nРедактировать данные?    (3)");
 
                 //SendUserDatebase - Выбор пользователя на сохранение данных
@@ -47,7 +60,8 @@ using (Application_Context ConnectDatabase = new Application_Context())
                     ConnectDatabase.DatabaseProject_Database.Add(ObjectUser);// Добавляем элементы в базу данных
                     ConnectDatabase.SaveChanges();// Сохраняем изменения в базе данных
                     Console.WriteLine("Объекты успешно сохранены");
-                    Console.WriteLine($"Ваш ID (Запишите его) ({ObjectUser.Id.Substring(0, 4)})");
+                    Console.WriteLine($"Ваш ID ({ObjectUser.Id.Substring(0, 4)}) Запишите его");
+                    Console.WriteLine("");
                     Console.WriteLine("Нажмите любую клавишу для продолжения");
                     Console.ReadLine();
                     Thread.Sleep(1000);
@@ -71,8 +85,8 @@ using (Application_Context ConnectDatabase = new Application_Context())
                 {
                     foreach (User @object in Users)
                     {
-                        Console.WriteLine("");
-                         Console.WriteLine($"ID({@object.Id.Substring(0, 4)})." + "Имя: " + @object.Name + "\nФамилия: " + @object.SurName + "\nВозраст: " + @object.Age);
+                        Console.WriteLine("__________________________ ");
+                        Console.WriteLine($"ID({@object.Id.Substring(0, 4)})." + "Имя: " + @object.Name + "\nФамилия: " + @object.SurName + "\nВозраст: " + @object.Age);
                     }
                 }
                 else
@@ -87,13 +101,26 @@ using (Application_Context ConnectDatabase = new Application_Context())
 
             case "3":
                 Environment.Exit(0);
+
+
                 break;
+
+
+            case "4":
+
+                Delete_User deleteUser = new Delete_User();
+                deleteUser.DeleteUser();
+
+                break;
+
+
             default:
                 Console.WriteLine("Невернное введенное значение!");
                 continue;
         }
     }
 }
+
 
 
 
