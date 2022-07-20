@@ -28,6 +28,7 @@ using (Application_Context ConnectDatabase = new Application_Context())
         PositionTxt.WriteAt("Записаться - Нажмите цифру (1) ", 43, 2);
         PositionTxt.WriteAt("Просмотреть список участников - Нажмите цифру (2) ", 33, 4);
         PositionTxt.WriteAt("Выйти - Нажмите цифру (3) ", 43, 6);
+        PositionTxt.WriteAt("Удалить данные (4)", 47, 8);
         PositionTxt.WriteAt("Ввод: ", 0, 10);
 
 
@@ -108,8 +109,8 @@ using (Application_Context ConnectDatabase = new Application_Context())
 
             case "4":
 
-                Delete_User deleteUser = new Delete_User();
-                deleteUser.DeleteUser();
+                Delete_User.DeleteUser();
+               
 
                 break;
 
