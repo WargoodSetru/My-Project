@@ -50,7 +50,7 @@ using (Application_Context ConnectDatabase = new Application_Context())
                 Console.Clear();
                 Console.WriteLine($"Проверьте введенные вами данные\n" + "Имя: " + ObjectUser.Name + "\nФамилия: " + ObjectUser.SurName + "\nВозраст: " + ObjectUser.Age);
                 Console.WriteLine("");
-                Console.WriteLine("Отрпавить данные?\nДа    (1)\nНет   (Нажмите любую клавишу для отмены действия)\nРедактировать данные?    (3)");
+                Console.WriteLine("Отрпавить данные?\nДа    (1)\nНет   (Нажмите любую клавишу для отмены действия)");
 
                 //SendUserDatebase - Выбор пользователя на сохранение данных
                 string SendUserDatebase = Console.ReadLine();
@@ -110,41 +110,19 @@ using (Application_Context ConnectDatabase = new Application_Context())
             case "4":
 
                 Delete_User.DeleteUser();
-               
+                
 
                 break;
 
 
             default:
                 Console.WriteLine("Невернное введенное значение!");
+                Thread.Sleep(2000);
+                Console.Clear();
                 continue;
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //// Создание пользователей
 //string RandomId = Guid.NewGuid().ToString("N");
 //    Console.WriteLine("Введите свое имя");
