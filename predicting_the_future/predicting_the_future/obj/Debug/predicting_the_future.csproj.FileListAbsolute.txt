@@ -1,0 +1,15 @@
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\bin\Debug\predicting_the_future.exe.config
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\bin\Debug\predicting_the_future.exe
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\bin\Debug\predicting_the_future.pdb
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.csproj.AssemblyReference.cache
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.csproj.SuggestedBindingRedirects.cache
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.Form1.resources
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.Properties.Resources.resources
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.csproj.GenerateResource.cache
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.csproj.CoreCompileInputs.cache
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.exe
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.pdb
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\bin\Debug\PredictionsConfig.json
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\bin\Debug\Newtonsoft.Json.dll
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\bin\Debug\Newtonsoft.Json.xml
+C:\Users\mazurima\source\repos\Repositor\predicting_the_future\predicting_the_future\obj\Debug\predicting_the_future.csproj.CopyComplete
