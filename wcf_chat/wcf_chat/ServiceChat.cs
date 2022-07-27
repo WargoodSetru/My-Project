@@ -21,7 +21,7 @@ namespace wcf_chat
        /// Список пользователей 
        /// </summary>
        List<ServerUser>  users = new List<ServerUser>();
-        int IdNext = 1;// для генерации ID
+        int nextId = 1;// для генерации ID
 
         /// <summary>
         /// Метод подключения: 
@@ -34,15 +34,15 @@ namespace wcf_chat
         {
             ServerUser user = new ServerUser()
             {
-                ID = IdNext,
+                ID = nextId,
                 Name = name,
-                OperationContext = OperationContext.Current
+                operationContext = OperationContext.Current
 
             };
 
-            IdNext++;// Увеличиваем ID на 1 с каждым новым user
+            nextId++;// Увеличиваем ID на 1 с каждым новым user
 
-            SendMessage(user.Name + "Подключился к чату!",0);
+            SendMsg(user.Name + "Подключился к чату! ",0);
             users.Add(user);//Добавляем нового пользователя в список 
             return user.ID;
         }
@@ -57,27 +57,24 @@ namespace wcf_chat
             if (user != null)// Если переменой которую мы ищем не будет, пользователь будет равен null
             {
                 users.Remove(user);// Удаляем пользователя из списка
-                SendMessage(user.Name + "Покинул чат",0);
+                SendMsg(user.Name + "Покинул чат ",0);
             }
-            else
-            {
-                SendMessage("Произошла ошибка!",0);
-            }
+         
         }
 
-        public void SendMessage(string message, int id)
+        public void SendMsg(string msg, int id)
         {
             foreach (var item in users)
             {
-                string Answer = DateTime.Now.ToShortTimeString();// Время сообщения
+                string answer = DateTime.Now.ToShortTimeString();// Время сообщения
                 
                 var user = users.FirstOrDefault(x => x.ID == id);//     ищем пользователя по ID в списке 
                 if (user != null)// Если переменой которую мы ищем не будет, пользователь будет равен null
                 {
-                    Answer += ": " + user.Name + " ";// Добавим в времени сообщеня имя usera
+                    answer += ": " + user.Name + " ";// Добавим в времени сообщеня имя usera
                 }
-                Answer += message;
-                item.OperationContext.GetCallbackChannel < IServerChatCallback>().MessageCallback(Answer);
+                answer += msg;
+                item.operationContext.GetCallbackChannel<IServerChatCallback>().MsgCallback(answer);
             }
         }
     }
