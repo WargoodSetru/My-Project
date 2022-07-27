@@ -12,10 +12,10 @@
             <ColumnDefinition Width="59*"/>
             <ColumnDefinition Width="536*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Margin="313,14,0,0" TextWrapping="Wrap" Text="Имя Пользователя: " VerticalAlignment="Top" Width="167" Height="29" Grid.Column="2"/>
-        <Button x:Name="bConnDiscon" Click="Button_Click" Content="Connect" HorizontalAlignment="Center" Margin="0,14,0,0" VerticalAlignment="Top" Height="30" Width="60" Grid.Column="2"/>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Left" Margin="247,14,0,0" TextWrapping="Wrap" Text="Имя Пользователя: " VerticalAlignment="Top" Width="233" Height="29" Grid.Column="2"/>
+        <Button x:Name="bConnDiscon" Click="Button_Click" Content="Connect" HorizontalAlignment="Left" Margin="27,13,0,0" VerticalAlignment="Top" Height="30" Width="172" Grid.Column="2"/>
         <TextBox x:Name="tbMessage" HorizontalAlignment="Left" Margin="21,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="756" Height="130" Grid.ColumnSpan="3" KeyDown="tbMessage_KeyDown"/>
-        <ListBox x:Name="lbChat" Margin="21,56,23,191" Grid.ColumnSpan="3"/>
+        <ListBox x:Name="lbChat" Margin="0,56,0,191" Grid.ColumnSpan="3"/>
 
     </Grid>
 </Window>

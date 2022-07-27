@@ -27,18 +27,18 @@ namespace ChatClient.ServiceChat {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceChat/DisConnect", ReplyAction="http://tempuri.org/IServiceChat/DisConnectResponse")]
         System.Threading.Tasks.Task DisConnectAsync(int id);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServiceChat/SendMessage")]
-        void SendMessage(string message, int id);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServiceChat/SendMsg")]
+        void SendMsg(string msg, int id);
         
-        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServiceChat/SendMessage")]
-        System.Threading.Tasks.Task SendMessageAsync(string message, int id);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServiceChat/SendMsg")]
+        System.Threading.Tasks.Task SendMsgAsync(string msg, int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface IServiceChatCallback {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceChat/MessageCallback", ReplyAction="http://tempuri.org/IServiceChat/MessageCallbackResponse")]
-        void MessageCallback(string message);
+        [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://tempuri.org/IServiceChat/MsgCallback")]
+        void MsgCallback(string msg);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -85,12 +85,12 @@ namespace ChatClient.ServiceChat {
             return base.Channel.DisConnectAsync(id);
         }
         
-        public void SendMessage(string message, int id) {
-            base.Channel.SendMessage(message, id);
+        public void SendMsg(string msg, int id) {
+            base.Channel.SendMsg(msg, id);
         }
         
-        public System.Threading.Tasks.Task SendMessageAsync(string message, int id) {
-            return base.Channel.SendMessageAsync(message, id);
+        public System.Threading.Tasks.Task SendMsgAsync(string msg, int id) {
+            return base.Channel.SendMsgAsync(msg, id);
         }
     }
 }

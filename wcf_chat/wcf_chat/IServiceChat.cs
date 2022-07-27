@@ -29,11 +29,11 @@ namespace wcf_chat
         /// </summary>
         /// <param name="message"></param>       
         [OperationContract(IsOneWay = true)]     // Если нам не нужно ждать ответа от сервера пишем (IsOneWay = true)        
-        void SendMsg(string msg,int id);
+        void SendMsg(string msg, int id);
     }
     public interface IServerChatCallback
     {
         [OperationContract(IsOneWay = true)]
         void MsgCallback(string msg);
-    } 
+    }
 }

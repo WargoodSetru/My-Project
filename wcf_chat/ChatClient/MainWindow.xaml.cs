@@ -19,7 +19,7 @@ namespace ChatClient
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window,IServiceChatCallback
+    public partial class MainWindow : Window, IServiceChatCallback
     {
         bool isConnected = false;
         ServiceChatClient client;
@@ -37,33 +37,35 @@ namespace ChatClient
         /// <param name="e"></param>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            
+
         }
-      
+
         /// <summary>
         /// Подключаемся
         /// </summary>
-        void ConnectUser() {
+        void ConnectUser()
+        {
 
             if (!isConnected)
             {
                 client = new ServiceChatClient(new System.ServiceModel.InstanceContext(this));
                 ID = client.Connect(tbUserName.Text);
                 tbUserName.IsEnabled = false;// Не меняем значение имени
-                bConnDiscon.Content = "Отключение";
+                bConnDiscon.Content = " Отключение ";
                 isConnected = true;
             }
         }
         /// <summary>
         /// Отключаемся
         /// </summary>
-        void DisConnectUser() {
+        void DisConnectUser()
+        {
             if (isConnected)
             {
                 client.DisConnect(ID);
                 client = null;
                 tbUserName.IsEnabled = true;//  Меняем значение имени
-                bConnDiscon.Content = "Включение";
+                bConnDiscon.Content = " Подключение ";
                 isConnected = false;
             }
         }
@@ -81,12 +83,7 @@ namespace ChatClient
             }
         }
 
-        public void MessageCallback(string message)
-        {
-            lbChat.Items.Add(message);// добавления сообщения 
-            lbChat.ScrollIntoView(lbChat.Items[lbChat.Items.Count-1]);
 
-        }
 
 
         /// <summary>
@@ -106,13 +103,16 @@ namespace ChatClient
             {
                 if (client != null)
                 {
-                    client.SendMessage(tbMessage.Text,ID);
+                    client.SendMsg(tbMessage.Text, ID);
                     tbMessage.Text = string.Empty;
                 }
             }
         }
 
-        
-
+        public void MsgCallback(string msg)
+        {
+            lbChat.Items.Add(msg);// добавления сообщения 
+            lbChat.ScrollIntoView(lbChat.Items[lbChat.Items.Count - 1]);// Для скрола за сообщениями 
+        }
     }
 }

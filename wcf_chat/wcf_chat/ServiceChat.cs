@@ -17,10 +17,10 @@ namespace wcf_chat
 
     public class ServiceChat : IServiceChat
     {
-       /// <summary>
-       /// Список пользователей 
-       /// </summary>
-       List<ServerUser>  users = new List<ServerUser>();
+        /// <summary>
+        /// Список пользователей 
+        /// </summary>
+        List<ServerUser> users = new List<ServerUser>();
         int nextId = 1;// для генерации ID
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace wcf_chat
 
             nextId++;// Увеличиваем ID на 1 с каждым новым user
 
-            SendMsg(user.Name + "Подключился к чату! ",0);
+            SendMsg(user.Name + " " + " Подключился к чату! ", 0);
             users.Add(user);//Добавляем нового пользователя в список 
             return user.ID;
         }
@@ -57,9 +57,9 @@ namespace wcf_chat
             if (user != null)// Если переменой которую мы ищем не будет, пользователь будет равен null
             {
                 users.Remove(user);// Удаляем пользователя из списка
-                SendMsg(user.Name + "Покинул чат ",0);
+                SendMsg(user.Name + " " + " Покинул чат ", 0);
             }
-         
+
         }
 
         public void SendMsg(string msg, int id)
@@ -67,11 +67,11 @@ namespace wcf_chat
             foreach (var item in users)
             {
                 string answer = DateTime.Now.ToShortTimeString();// Время сообщения
-                
+
                 var user = users.FirstOrDefault(x => x.ID == id);//     ищем пользователя по ID в списке 
                 if (user != null)// Если переменой которую мы ищем не будет, пользователь будет равен null
                 {
-                    answer += ": " + user.Name + " ";// Добавим в времени сообщеня имя usera
+                     answer += " : " + " - " + user.Name + " ";// Добавим в времени сообщеня имя usera
                 }
                 answer += msg;
                 item.operationContext.GetCallbackChannel<IServerChatCallback>().MsgCallback(answer);
