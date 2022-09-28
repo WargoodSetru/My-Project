@@ -7,7 +7,6 @@ using System.Text;
 
 namespace wcf_chat
 {
-    // ПРИМЕЧАНИЕ. Можно использовать команду "Переименовать" в меню "Рефакторинг", чтобы изменить имя интерфейса "IServiceChat" в коде и файле конфигурации.
     [ServiceContract(CallbackContract = typeof(IServerChatCallback))]
     public interface IServiceChat
     {
@@ -16,23 +15,25 @@ namespace wcf_chat
         /// </summary>
         /// <returns></returns>
         [OperationContract]
-        int Connect();
+        int Connect(string name);
+
         /// <summary>
         /// Отключение
         /// </summary>
         /// <returns></returns>
         [OperationContract]
         void DisConnect(int id);
+
         /// <summary>
         /// Принимает сообщение
         /// </summary>
-        /// <param name="message"></param>
-        [OperationContract(IsOneWay = true)]     // Если нам не нужно ждать ответа от сервера пишем (IsOneWay = true)
-        void SendMessage(string message);
+        /// <param name="message"></param>       
+        [OperationContract(IsOneWay = true)]     // Если нам не нужно ждать ответа от сервера пишем (IsOneWay = true)        
+        void SendMsg(string msg, int id);
     }
     public interface IServerChatCallback
     {
-        [OperationContract]
-        void MessageCallback(string message);
-    } 
+        [OperationContract(IsOneWay = true)]
+        void MsgCallback(string msg);
+    }
 }

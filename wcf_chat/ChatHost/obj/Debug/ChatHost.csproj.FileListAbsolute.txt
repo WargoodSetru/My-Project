@@ -1,0 +1,12 @@
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\bin\Debug\ChatHost.exe.config
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\bin\Debug\ChatHost.exe
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\bin\Debug\ChatHost.pdb
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\bin\Debug\wcf_chat.dll
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\bin\Debug\wcf_chat.pdb
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\bin\Debug\wcf_chat.dll.config
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.AssemblyReference.cache
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.SuggestedBindingRedirects.cache
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.CoreCompileInputs.cache
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\obj\Debug\ChatHost.csproj.CopyComplete
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\obj\Debug\ChatHost.exe
+C:\Users\mazurima\source\repos\Repositor\wcf_chat\ChatHost\obj\Debug\ChatHost.pdb
