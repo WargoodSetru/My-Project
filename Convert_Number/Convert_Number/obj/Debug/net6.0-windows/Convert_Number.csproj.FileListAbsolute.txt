@@ -1,0 +1,17 @@
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\bin\Debug\net6.0-windows\Convert_Number.exe
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\bin\Debug\net6.0-windows\Convert_Number.deps.json
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\bin\Debug\net6.0-windows\Convert_Number.runtimeconfig.json
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\bin\Debug\net6.0-windows\Convert_Number.dll
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\bin\Debug\net6.0-windows\Convert_Number.pdb
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.csproj.AssemblyReference.cache
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.Form1.resources
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.csproj.GenerateResource.cache
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.AssemblyInfoInputs.cache
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.AssemblyInfo.cs
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.csproj.CoreCompileInputs.cache
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.dll
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\refint\Convert_Number.dll
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.pdb
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\Convert_Number.genruntimeconfig.cache
+C:\Users\maks_\source\repos\Convert_Number\Convert_Number\obj\Debug\net6.0-windows\ref\Convert_Number.dll
