@@ -10,7 +10,6 @@ namespace Convert_Number
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-
             if (textBox1.Text == "0" && textBox1.Text != null)
             {
                 int user_number = Convert.ToInt32(textBox1.Text);
@@ -34,38 +33,63 @@ namespace Convert_Number
             }
 
         }
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object Value, EventArgs e)
         {
-      
-            int i = Convert.ToInt32(textBox1.Text);
-            textBox2.Text = Convert.ToString(i, 2);
+            if (int.TryParse(textBox1.Text, out int text))
+            {
+                int value = Convert.ToInt32(textBox1.Text);
+                textBox2.Text = Convert.ToString(value, 2);
+            }
+            else
+            {
+                textBox2.Text = "Ошибка ввода";
+            }
+
+        }
+        private void radioButton2_CheckedChanged(object Value, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int text))
+            {
+                int value = Convert.ToInt32(textBox1.Text);
+                textBox2.Text = Convert.ToString(value, 8);
+            }
+            else
+            {
+                textBox2.Text = "Ошибка ввода";
+            }
+
+        }
+        private void radioButton3_CheckedChanged(object Value, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int text))
+            {
+                int value = Convert.ToInt32(textBox1.Text);
+                textBox2.Text = Convert.ToString(value, 10);
+            }
+            else
+            {
+                textBox2.Text = "Ошибка ввода";
+            }
+
+        }
+        private void radioButton4_CheckedChanged(object Value, EventArgs e)
+        {
+            if (int.TryParse(textBox1.Text, out int text))
+            {
+                int value = Convert.ToInt32(textBox1.Text);
+                textBox2.Text = Convert.ToString(value, 16);
+            }
+            else
+            {
+                textBox2.Text = "Ошибка ввода";
+            }
+        }
+        private void Form1_Load(object Value, EventArgs e)
+        {
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            int i = Convert.ToInt32(textBox1.Text);
-            textBox2.Text = Convert.ToString(i, 8);
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-            int i = Convert.ToInt32(textBox1.Text);
-            textBox2.Text = Convert.ToString(i, 10);
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            int i = Convert.ToInt32(textBox1.Text);
-            textBox2.Text = Convert.ToString(i, 16);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void textBox2_TextChanged(object Value, EventArgs e)
         {
 
         }
