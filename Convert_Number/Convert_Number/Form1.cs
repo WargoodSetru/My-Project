@@ -11,36 +11,35 @@ namespace Convert_Number
         {
 
 
-            int i = Convert.ToInt32(textBox1.Text);
-            if (radioButton1.Checked == true)
+            if (textBox1.Text == "0" && textBox1.Text != null)
             {
-                textBox2.Text = Convert.ToString(i, 2);
-            }
-            else if (radioButton2.Checked == true)
-            {
-                textBox2.Text = Convert.ToString(i, 8);
-            }
-            else if (radioButton3.Checked == true)
-            {
-                textBox2.Text = Convert.ToString(i, 10);
-            }
-            else if (radioButton3.Checked == true)
-            {
-                textBox2.Text = Convert.ToString(i, 16);
-            }
-            if (textBox1 == null)
-            {
+                int user_number = Convert.ToInt32(textBox1.Text);
 
+                if (radioButton1.Checked == true)
+                {
+                    textBox2.Text = Convert.ToString(user_number, 2);
+                }
+                else if (radioButton2.Checked == true)
+                {
+                    textBox2.Text = Convert.ToString(user_number, 8);
+                }
+                else if (radioButton3.Checked == true)
+                {
+                    textBox2.Text = Convert.ToString(user_number, 10);
+                }
+                else if (radioButton4.Checked == true)
+                {
+                    textBox2.Text = Convert.ToString(user_number, 16);
+                }
             }
+
         }
-
-
-
-
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+      
             int i = Convert.ToInt32(textBox1.Text);
             textBox2.Text = Convert.ToString(i, 2);
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -68,10 +67,7 @@ namespace Convert_Number
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1 == null)
-            {
-                textBox2.Clear();
-            }
+
         }
     }
 }
