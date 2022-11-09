@@ -1,0 +1,15 @@
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\bin\Debug\net6.0\Convert_number(Console).exe
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\bin\Debug\net6.0\Convert_number(Console).deps.json
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\bin\Debug\net6.0\Convert_number(Console).runtimeconfig.json
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\bin\Debug\net6.0\Convert_number(Console).dll
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\bin\Debug\net6.0\Convert_number(Console).pdb
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).csproj.AssemblyReference.cache
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).AssemblyInfoInputs.cache
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).AssemblyInfo.cs
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).csproj.CoreCompileInputs.cache
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).dll
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\refint\Convert_number(Console).dll
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).pdb
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\Convert_number(Console).genruntimeconfig.cache
+C:\Users\maks_\source\repos\Convert_number(Console)\Convert_number(Console)\obj\Debug\net6.0\ref\Convert_number(Console).dll
