@@ -1,0 +1,15 @@
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\bin\Debug\net6.0\Console_Convert(float).exe
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\bin\Debug\net6.0\Console_Convert(float).deps.json
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\bin\Debug\net6.0\Console_Convert(float).runtimeconfig.json
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\bin\Debug\net6.0\Console_Convert(float).dll
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\bin\Debug\net6.0\Console_Convert(float).pdb
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).csproj.AssemblyReference.cache
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).AssemblyInfoInputs.cache
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).AssemblyInfo.cs
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).csproj.CoreCompileInputs.cache
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).dll
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\refint\Console_Convert(float).dll
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).pdb
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\Console_Convert(float).genruntimeconfig.cache
+C:\Users\maks_\source\repos\Console_Convert(float)\Console_Convert(float)\obj\Debug\net6.0\ref\Console_Convert(float).dll
